@@ -1,328 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Christopher Tumbokon | Computer Engineering</title>
-  <meta
-    name="description"
-    content="Portfolio of Christopher Tumbokon, a computer engineering student interested in embedded systems, firmware, and robotics."
-  />
+    <title>Christopher Tumbokon – Portfolio</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+    <meta
+      name="description"
+      content="Portfolio of Christopher Tumbokon: computer engineering, embedded systems, robotics, and projects."
+    />
 
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
-</head>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <header class="site-header">
-    <div class="container header-content">
-      <a class="brand" href="#top">Christopher Tumbokon</a>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
 
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a class="nav-contact" href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+    />
+  </head>
 
-  <main id="top">
-    <!-- INTRODUCTION -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="eyebrow">
-            COMPUTER ENGINEERING STUDENT · CAL POLY SAN LUIS OBISPO
-          </p>
-
-          <h1>
-            Exploring where <span>hardware and software</span> meet.
-          </h1>
-
-          <p class="hero-description">
-            I'm Christopher, a computer engineering student interested in
-            embedded systems, firmware, and robotics. I enjoy working with
-            microcontrollers, sensors, and the software that brings them together.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View my projects</a>
-            <a class="button button-secondary" href="#contact">Get in touch</a>
-          </div>
-        </div>
-
-        <div class="hero-panel" aria-label="Areas of interest">
-          <div class="panel-top">
-            <span class="panel-label">AREAS OF INTEREST</span>
-            <span class="panel-symbol" aria-hidden="true">✳</span>
-          </div>
-
-          <div class="interest-item">
-            <span class="interest-number">01</span>
-            <div>
-              <h2>Embedded systems</h2>
-              <p>Microcontrollers, peripherals, and hardware interfaces</p>
-            </div>
-          </div>
-
-          <div class="interest-item">
-            <span class="interest-number">02</span>
-            <div>
-              <h2>Firmware</h2>
-              <p>C programming and real-time system development</p>
-            </div>
-          </div>
-
-          <div class="interest-item">
-            <span class="interest-number">03</span>
-            <div>
-              <h2>Robotics</h2>
-              <p>Sensors, mobile robots, and system integration</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="container section-grid">
-        <div>
-          <p class="section-label">01 / ABOUT</p>
-          <h2 class="section-title">A little about me.</h2>
-        </div>
-
-        <div class="about-content">
-          <p class="lead">
-            I'm a computer engineering student at Cal Poly San Luis Obispo,
-            with an expected graduation date of June 2028.
-          </p>
-
-          <p>
-            My interests center on embedded systems and firmware, particularly
-            how software interacts with physical hardware. Through personal
-            projects, I've worked with STM32 and ESP32 microcontrollers,
-            communication interfaces, sensors, and real-time systems.
-          </p>
-
-          <p>
-            I've also worked as an undergraduate research assistant on a ROS 2
-            robotics project involving mobile robots, communication, and
-            navigation. In addition, my IT support experience has helped me
-            develop troubleshooting and collaboration skills.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section class="section section-tinted" id="projects">
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
       <div class="container">
-        <div class="section-heading">
-          <div>
-            <p class="section-label">02 / PROJECTS</p>
-            <h2 class="section-title">Selected work.</h2>
-          </div>
+        <h1 class="brand">Christopher Tumbokon</h1>
 
-          <p class="section-intro">
-            A look at the hardware, firmware, and robotics work I've explored.
-          </p>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-topline">
-              <span class="project-number">PROJECT 01</span>
-              <span class="project-status">In progress</span>
-            </div>
-
-            <h3>STM32 Data Acquisition &amp; CAN Communication</h3>
-
-            <p>
-              An embedded project focused on developing bare-metal firmware
-              for an STM32 microcontroller, interfacing with sensors and
-              peripherals, and implementing data acquisition and CAN communication.
-            </p>
-
-            <ul class="tags" aria-label="Technologies used">
-              <li>STM32</li>
-              <li>C</li>
-              <li>SPI</li>
-              <li>I²C</li>
-              <li>CAN</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span class="project-number">PROJECT 02</span>
-              <span class="project-status">Personal project</span>
-            </div>
-
-            <h3>Autonomous Rover with ESP32-S3</h3>
-
-            <p>
-              A rover project exploring motor control, sensor integration,
-              real-time task scheduling, and on-device machine learning
-              using an ESP32-S3.
-            </p>
-
-            <ul class="tags" aria-label="Technologies used">
-              <li>ESP32</li>
-              <li>FreeRTOS</li>
-              <li>TinyML</li>
-              <li>Sensors</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-topline">
-              <span class="project-number">PROJECT 03</span>
-              <span class="project-status">Research experience</span>
-            </div>
-
-            <h3>Mobile Robotics Research</h3>
-
-            <p>
-              Undergraduate research using ROS 2 and mobile robot platforms,
-              with work involving navigation, robot-to-robot communication,
-              and Linux-based system troubleshooting.
-            </p>
-
-            <ul class="tags" aria-label="Technologies used">
-              <li>ROS 2</li>
-              <li>Robotics</li>
-              <li>Linux</li>
-              <li>Networking</li>
-            </ul>
-          </article>
-        </div>
-
-        <p class="projects-note">
-          Visit my GitHub profile to explore my repositories.
-          <a href="https://github.com/christophertumbokon">
-            View GitHub <span aria-hidden="true">↗</span>
-          </a>
-        </p>
+        <nav class="nav">
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-      <div class="container section-grid">
-        <div>
-          <p class="section-label">03 / SKILLS</p>
-          <h2 class="section-title">Tools I work with.</h2>
-        </div>
+    <main>
+      <!-- ===== HERO ===== -->
+      <section class="hero" id="top">
+        <div class="container">
+          <h2 class="title" data-aos="fade-up">
+            Exploring the connection between hardware and software.
+          </h2>
 
-        <div class="skills-grid">
-          <div class="skill-group">
-            <h3>Programming</h3>
-            <p>C, C++, Python</p>
-          </div>
-
-          <div class="skill-group">
-            <h3>Embedded systems</h3>
-            <p>STM32, ESP32, FreeRTOS, Arduino, Raspberry Pi</p>
-          </div>
-
-          <div class="skill-group">
-            <h3>Interfaces</h3>
-            <p>UART, I²C, SPI, CAN, GPIO, PWM</p>
-          </div>
-
-          <div class="skill-group">
-            <h3>Tools</h3>
-            <p>Git, Linux, ROS 2, oscilloscopes, logic analyzers</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section contact-section" id="contact">
-      <div class="container contact-grid">
-        <div class="contact-intro">
-          <p class="section-label">04 / CONTACT</p>
-          <h2 class="section-title">Let's connect.</h2>
-
-          <p>
-            Have a question or want to get in touch? Send me a message
-            using the form, or find me on LinkedIn and GitHub.
+          <p class="subtitle" data-aos="fade-up" data-aos-delay="100">
+            Computer Engineering student interested in embedded systems,
+            firmware development, and robotics.
           </p>
 
-          <div class="contact-links">
-            <a href="mailto:ctumboko@gmail.com">ctumboko@gmail.com</a>
-            <a href="https://www.linkedin.com/in/ctumbokon/">
-              LinkedIn <span aria-hidden="true">↗</span>
-            </a>
-            <a href="https://github.com/christophertumbokon">
-              GitHub <span aria-hidden="true">↗</span>
-            </a>
+          <p class="cta" data-aos="fade-up" data-aos-delay="200">
+            <a class="btn primary" href="#projects">See projects</a>
+            <a class="btn" href="#contact">Contact me</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== PROJECTS ===== -->
+      <section id="projects" class="section">
+        <div class="container">
+          <h3 data-aos="fade-right">Projects</h3>
+
+          <div class="cards">
+            <article class="card" data-aos="zoom-in">
+              <!-- Replace this image URL with your own project image later -->
+              <img
+                src="https://picsum.photos/seed/app1/800/480"
+                alt="Placeholder image for the STM32 project"
+              />
+
+              <div class="card-body">
+                <h4>STM32 Data Acquisition and CAN Communication</h4>
+
+                <p>
+                  An in-progress project involving bare-metal C firmware,
+                  sensor interfacing, data acquisition, and CAN communication
+                  using an STM32 microcontroller.
+                </p>
+
+                <p class="tags">
+                  <span class="tag">STM32</span>
+                  <span class="tag">C</span>
+                  <span class="tag">CAN</span>
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-aos="zoom-in" data-aos-delay="100">
+              <!-- Replace this image URL with your own project image later -->
+              <img
+                src="https://picsum.photos/seed/app2/800/480"
+                alt="Placeholder image for the autonomous rover project"
+              />
+
+              <div class="card-body">
+                <h4>Autonomous Rover with ESP32-S3</h4>
+
+                <p>
+                  A rover project exploring motor control, sensors,
+                  real-time task scheduling, and on-device machine learning
+                  with an ESP32-S3.
+                </p>
+
+                <p class="tags">
+                  <span class="tag">ESP32</span>
+                  <span class="tag">FreeRTOS</span>
+                  <span class="tag">TinyML</span>
+                </p>
+              </div>
+            </article>
+
+            <article class="card" data-aos="zoom-in" data-aos-delay="200">
+              <!-- Replace this image URL with your own project image later -->
+              <img
+                src="https://picsum.photos/seed/app3/800/480"
+                alt="Placeholder image for the robotics research project"
+              />
+
+              <div class="card-body">
+                <h4>Mobile Robotics Research</h4>
+
+                <p>
+                  Undergraduate research using ROS 2 and mobile robot
+                  platforms, involving navigation, robot-to-robot
+                  communication, and Linux-based troubleshooting.
+                </p>
+
+                <p class="tags">
+                  <span class="tag">ROS 2</span>
+                  <span class="tag">Robotics</span>
+                  <span class="tag">Linux</span>
+                </p>
+              </div>
+            </article>
           </div>
         </div>
+      </section>
 
-        <form
-          action="https://formspree.io/f/xeopjagb"
-          method="POST"
-          class="contact-form"
-        >
-          <div class="field">
-            <label for="name">Name</label>
+      <!-- ===== ABOUT ===== -->
+      <section id="about" class="section alt">
+        <div class="container">
+          <h3 data-aos="fade-right">About</h3>
+
+          <div class="about-grid">
+            <div
+              class="about-panel"
+              data-aos="fade-up"
+              aria-hidden="true"
+            ></div>
+
+            <div data-aos="fade-left">
+              <p>
+                I'm Christopher Tumbokon, a Computer Engineering student at
+                Cal Poly San Luis Obispo. I'm interested in embedded systems,
+                firmware development, and how hardware and software work together.
+              </p>
+
+              <p>
+                Through personal projects and robotics research, I've worked
+                with microcontrollers, sensors, communication protocols, and
+                ROS 2. I enjoy learning through hands-on projects and solving
+                technical problems.
+              </p>
+
+              <ul>
+                <li>⚡ Interests: embedded systems, firmware, and robotics</li>
+                <li>🧰 Tools: C, STM32, ESP32, FreeRTOS, Git, and Linux</li>
+                <li>🎓 Expected graduation: June 2028</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CONTACT ===== -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h3 data-aos="fade-right">Contact</h3>
+
+          <p class="note" data-aos="fade-up">
+            Prefer LinkedIn? Message me here:
+            <a
+              class="link"
+              href="https://www.linkedin.com/in/ctumbokon/"
+              target="_blank"
+              rel="noopener"
+            >linkedin.com/in/ctumbokon</a>
+          </p>
+
+          <form
+            action="https://formspree.io/f/xeopjagb"
+            method="POST"
+            class="form"
+            data-aos="fade-up"
+          >
             <input
-              id="name"
               name="name"
-              type="text"
               placeholder="Your name"
-              autocomplete="name"
+              aria-label="Your name"
               required
             />
-          </div>
 
-          <div class="field">
-            <label for="email">Email</label>
             <input
-              id="email"
               name="email"
               type="email"
               placeholder="you@example.com"
-              autocomplete="email"
+              aria-label="Your email"
               required
             />
-          </div>
 
-          <div class="field">
-            <label for="message">Message</label>
             <textarea
-              id="message"
               name="message"
-              placeholder="Hi Christopher, I'd like to connect..."
+              placeholder="Hi Christopher! I'd like to talk about…"
+              aria-label="Your message"
               required
             ></textarea>
-          </div>
 
-          <button class="button button-primary" type="submit">
-            Send message
-          </button>
-        </form>
+            <div class="actions">
+              <button class="btn primary" type="submit">Send</button>
+
+              <button
+                class="btn"
+                type="button"
+                id="copyLinkedIn"
+              >
+                Copy LinkedIn
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+      <div class="container">
+        © <span id="year"></span> Christopher Tumbokon ·
+        <a href="#top" class="link">Back to top ↑</a>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <p>© <span id="year"></span> Christopher Tumbokon</p>
-      <a href="#top">Back to top ↑</a>
-    </div>
-  </footer>
-</body>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+  </body>
 </html>

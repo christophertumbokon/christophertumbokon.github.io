@@ -1,23 +1,6 @@
-// hard-reset any old dark setting
-try { localStorage.removeItem("prefers-dark"); } catch (e) {}
-document.body.classList.remove("dark");
+// Keep the copyright year up to date.
+const yearElement = document.getElementById("year");
 
-// AOS init
-document.addEventListener("DOMContentLoaded", () => {
-  if (window.AOS) AOS.init({ once: true, duration: 600, offset: 60 });
-});
-
-// Copy LinkedIn
-const copyLinkedInBtn = document.getElementById("copyLinkedIn");
-const linkedInURL = "https://www.linkedin.com/in/christopher-tumbokon-b5501b368";
-copyLinkedInBtn?.addEventListener("click", async () => {
-  try {
-    await navigator.clipboard.writeText(linkedInURL);
-    alert("LinkedIn URL copied!");
-  } catch {
-    alert(`Could not copy. Link: ${linkedInURL}`);
-  }
-});
-
-// Footer year
-document.getElementById("year").textContent = new Date().getFullYear();
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}

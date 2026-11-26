@@ -32,3 +32,16 @@ copyLinkedInBtn?.addEventListener("click", async () => {
 
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
+
+// Open and close the symposium poster
+const roboticsPdfDialog = document.getElementById("roboticsPdfDialog");
+const openRoboticsPdf = document.getElementById("openRoboticsPdf");
+const closeRoboticsPdf = document.getElementById("closeRoboticsPdf");
+
+openRoboticsPdf?.addEventListener("click", () => {
+  roboticsPdfDialog?.showModal();
+});
+
+closeRoboticsPdf?.addEventListener("click", () => {
+  roboticsPdfDialog?.close();
+});

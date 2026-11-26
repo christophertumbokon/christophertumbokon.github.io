@@ -342,3 +342,49 @@ body {
 .site-header {
   background: #dce9dc;
 }
+
+/* Light gray page background */
+body {
+  background: #f5f5f5;
+}
+
+/* Slightly darker header */
+.site-header {
+  background: #e8e8e8;
+}
+
+/* Center the name and navigation vertically */
+.site-header .container {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Remove extra heading spacing */
+.brand {
+  margin: 0;
+}
+
+/* Keep the About section the same color as the page */
+.section.alt {
+  background: transparent;
+}
+
+/* Allow the header to fit on smaller screens */
+@media (max-width: 600px) {
+  .site-header .container {
+    min-height: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

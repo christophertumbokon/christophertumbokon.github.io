@@ -224,7 +224,6 @@ textarea {
   background-color: #013f24;
   background-image: url("calpoly_banner_new.png");
   background-repeat: no-repeat;
-  background-position: calc(100% + 500px) center;
   
 
   color: #ffffff;
@@ -507,7 +506,7 @@ body {
 /* Show the complete About banner image */
 .about-banner {
   background-size: auto 100%;
-  background-position: center;
+  background-position: calc(50% + 12px) center;
   background-repeat: no-repeat;
 }
 

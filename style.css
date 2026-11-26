@@ -264,3 +264,33 @@ textarea {
     max-width: 100%;
   }
 }
+
+/* Soft green page background */
+body {
+  background: #f1f7f1;
+}
+
+/* Match the header to the page */
+.site-header {
+  background: rgba(241, 247, 241, 0.95);
+}
+
+/* Keep the About section complementary to the page */
+.section.alt {
+  background: linear-gradient(180deg, #e5f0e7, #f1f7f1);
+}
+
+/* Light gray buttons */
+.btn,
+.btn.primary {
+  background: #e8ece9;
+  border: 1px solid #cbd5ce;
+  color: #17251c;
+  font-weight: 600;
+}
+
+/* Slightly darker gray when hovering */
+.btn:hover,
+.btn.primary:hover {
+  background: #d5ded7;
+}

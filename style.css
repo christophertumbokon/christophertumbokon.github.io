@@ -294,3 +294,35 @@ body {
 .btn.primary:hover {
   background: #d5ded7;
 }
+
+/* Give all project images the same shape */
+.card img {
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Keep each card's content aligned */
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Leave room for titles that wrap to two lines */
+.card-body h4 {
+  min-height: 3.2em;
+  margin-top: 0;
+}
+
+/* Place technology tags at the bottom of each card */
+.card-body .tags {
+  margin-top: auto;
+  padding-top: 12px;
+}

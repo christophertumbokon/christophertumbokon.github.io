@@ -259,38 +259,31 @@
         <a href="#top" class="link">Back to top ↑</a>
       </div>
     </footer>
-    <!-- Symposium poster pop-up -->
-    <dialog
-      id="roboticsPdfDialog"
-      class="pdf-dialog"
-      aria-labelledby="pdfTitle"
+<!-- Symposium poster pop-up -->
+<dialog
+  id="roboticsPdfDialog"
+  class="pdf-dialog"
+  aria-labelledby="pdfTitle"
+>
+  <div class="pdf-dialog-header">
+    <h2 id="pdfTitle">Mobile Robotics Symposium Poster</h2>
+
+    <button
+      type="button"
+      id="closeRoboticsPdf"
+      class="pdf-close"
+      aria-label="Close poster"
     >
-      <div class="pdf-dialog-header">
-        <h2 id="pdfTitle">Mobile Robotics Symposium Poster</h2>
-    
-        <button
-          type="button"
-          id="closeRoboticsPdf"
-          class="pdf-close"
-          aria-label="Close poster"
-        >
-          &times;
-        </button>
-      </div>
-    
-      <img
-        src="robotics-preview-2.png"
-        alt="Mobile Robotics Symposium Poster"
-        class="poster-image"
-      />
-    
-      <p class="pdf-fallback">
-        <a
-          href="robotics-preview-2.png"
-          target="_blank"
-          rel="noopener"
-      </p>
-    </dialog>
+      &times;
+    </button>
+  </div>
+
+  <img
+    src="robotics-preview-2.png"
+    alt="Mobile Robotics Symposium Poster"
+    class="poster-image"
+  />
+</dialog>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

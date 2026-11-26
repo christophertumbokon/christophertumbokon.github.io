@@ -326,3 +326,18 @@ body {
   margin-top: auto;
   padding-top: 12px;
 }
+
+/* Consistent green background across the entire page */
+body {
+  background: #dce9dc;
+}
+
+/* Remove the different About section background */
+.section.alt {
+  background: transparent;
+}
+
+/* Match the header to the page background */
+.site-header {
+  background: #dce9dc;
+}

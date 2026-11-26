@@ -216,30 +216,30 @@ textarea {
 
 /* About section banner */
 .about-banner {
-  min-height: 420px;
-  padding: 36px 40px;
+  min-height: 450px;
+  padding: 40px;
   border-radius: 16px;
   overflow: hidden;
 
   background-color: #00462d;
   background-image: url("calpoly_banner.avif");
   background-repeat: no-repeat;
-  background-position: right center;
-  background-size: contain;
+  background-position: right 40px center;
+  background-size: auto calc(100% - 80px);
 
   color: #ffffff;
 }
 
 .about-banner-content {
   max-width: 53%;
+  font-size: 1.08rem;
   font-weight: 600;
-  font-size: 0.98rem;
   line-height: 1.55;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
 .about-banner-content p {
-  margin: 0 0 14px;
+  margin: 0 0 16px;
 }
 
 .about-banner-content ul {
@@ -248,10 +248,10 @@ textarea {
 }
 
 .about-banner-content li {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
-/* Keep the logo above the text on smaller screens */
+/* On smaller screens, position the image above the text */
 @media (max-width: 700px) {
   .about-banner {
     min-height: 0;
@@ -262,6 +262,7 @@ textarea {
 
   .about-banner-content {
     max-width: 100%;
+    font-size: 1rem;
   }
 }
 

@@ -477,3 +477,13 @@ body {
 .card-body:has(#openRoboticsPdf) > p:not(.tags) {
   margin-bottom: 0;
 }
+
+.poster-image {
+  display: block;
+  max-width: 100%;
+  max-height: calc(90vh - 70px);
+  width: auto;
+  height: auto;
+  margin: auto;
+  object-fit: contain;
+}

@@ -406,3 +406,58 @@ body {
   height: 100%;
   object-fit: cover;
 }
+
+/* Symposium poster pop-up */
+.pdf-dialog {
+  width: min(95vw, 1100px);
+  height: 90vh;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.pdf-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.pdf-dialog-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 18px;
+}
+
+.pdf-dialog-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.pdf-close {
+  border: 0;
+  background: transparent;
+  color: #222;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.pdf-dialog iframe {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  border: 0;
+}
+
+.pdf-fallback {
+  margin: 0;
+  padding: 10px 18px;
+  font-size: 0.9rem;
+}

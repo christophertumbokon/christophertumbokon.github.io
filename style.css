@@ -372,19 +372,26 @@ body {
   background: transparent;
 }
 
-/* Allow the header to fit on smaller screens */
 @media (max-width: 600px) {
   .site-header .container {
-    min-height: 0;
-    flex-direction: column;
+    min-height: 70px;
+    flex-direction: row;
     align-items: center;
-    gap: 8px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .brand {
+    font-size: 1.1rem;
   }
 
   .nav {
-    justify-content: center;
-    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+
+  .nav a {
+    font-size: 0.8rem;
   }
 }

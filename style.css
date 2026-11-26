@@ -224,8 +224,8 @@ textarea {
   background-color: #00462d;
   background-image: url("calpoly_banner.avif");
   background-repeat: no-repeat;
-  background-position: right 40px center;
-  background-size: auto calc(100% - 80px);
+  background-position: right center;
+  background-size: cover;
 
   color: #ffffff;
 }

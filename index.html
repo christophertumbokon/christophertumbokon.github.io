@@ -259,7 +259,39 @@
         <a href="#top" class="link">Back to top ↑</a>
       </div>
     </footer>
-
+    <!-- Symposium poster pop-up -->
+    <dialog
+      id="roboticsPdfDialog"
+      class="pdf-dialog"
+      aria-labelledby="pdfTitle"
+    >
+      <div class="pdf-dialog-header">
+        <h2 id="pdfTitle">Mobile Robotics Symposium Poster</h2>
+    
+        <button
+          type="button"
+          id="closeRoboticsPdf"
+          class="pdf-close"
+          aria-label="Close poster"
+        >
+          &times;
+        </button>
+      </div>
+    
+      <iframe
+        src="TurtleBot4_Stretch_2026_BEACoN.pdf"
+        title="Mobile Robotics Symposium Poster"
+      ></iframe>
+    
+      <p class="pdf-fallback">
+        If the poster doesn’t display,
+        <a
+          href="TurtleBot4_Stretch_2026_BEACoN.pdf"
+          target="_blank"
+          rel="noopener"
+        >open the PDF in a new tab</a>.
+      </p>
+    </dialog>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

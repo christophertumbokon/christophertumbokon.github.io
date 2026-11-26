@@ -461,3 +461,19 @@ body {
   padding: 10px 18px;
   font-size: 0.9rem;
 }
+
+/* Center the poster button vertically between the description and tags */
+#openRoboticsPdf {
+  margin-top: auto;
+}
+
+/* Share the available space below the button */
+#openRoboticsPdf + .tags {
+  margin-top: auto;
+  padding-top: 0;
+}
+
+/* Remove extra paragraph spacing above the button */
+.card-body:has(#openRoboticsPdf) > p:not(.tags) {
+  margin-bottom: 0;
+}

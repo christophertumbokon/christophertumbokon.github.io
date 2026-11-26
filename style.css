@@ -504,3 +504,9 @@ body {
   border-color: #0b5c3c;
 }
 
+/* Show the complete About banner image */
+.about-banner {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}

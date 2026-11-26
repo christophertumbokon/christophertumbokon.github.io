@@ -224,7 +224,7 @@ textarea {
   background-color: #013f24;
   background-image: url("calpoly_banner_new.png");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: calc(100% + 12px) center;
   
 
   color: #ffffff;
@@ -509,4 +509,27 @@ body {
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* Blend the banner image into the solid green background */
+.about-banner {
+  position: relative;
+  isolation: isolate;
+}
+
+.about-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: -1;
+
+  background: linear-gradient(
+    to right,
+    #013f24 0%,
+    transparent 8%,
+    transparent 92%,
+    #013f24 100%
+  );
 }

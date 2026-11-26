@@ -504,12 +504,3 @@ body {
   border-color: #0b5c3c;
 }
 
-/* Match the area behind the poster to its green edge */
-.pdf-dialog {
-  background: #00462d;
-}
-
-/* Keep the title bar white */
-.pdf-dialog-header {
-  background: #ffffff;
-}
